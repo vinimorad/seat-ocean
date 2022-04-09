@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Conheça uma experiência de viagem inesquecível, para vivenciar culturas marítimas e se divertir com outra realidade. Faça memórias e tire fotos ao longo da viagem e aprecie delícias feitas com frutos do mar e aproveite. Conecte a família e amigos.">
+    <title>SeatOcean</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/index.js" defer></script>
+    <script src="https://kit.fontawesome.com/c00ddef8aa.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="content">
+          <a class="logo" href="/">SeatOcean</a>
+          <nav>
+            <ul>
+              <li><a href="#">Nossa história</a></li>
+              <li><a href="#">Serviços</a></li>
+              <li><a href="#">Viagens</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mobile-menu">
+          <i class="fa-solid fa-bars fa-2xl" style="color: white" id="icon-menu" onclick="showMobileMenu()"></i>
+          <div class="bar" id="mobilemenu">
+            <nav>
+              <i class="fa-solid fa-xmark fa-2xl" style="color: white;" onclick="hideMobileMenu()"></i>
+              <ul>
+                <li><a href="#">Nossa história</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Viagens</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1>
+              Conheça o cruzeiro do Brasil, <span>experiências</span> incriveis você encontra
+              aqui!
+            </h1>
+            <button>Saiba mais</button>
+          </div>
+        </div>
+      </section>
+      <section id="hero-2">
+          <div class="container">
+            <div class="cards" id="cards">
+                <div class="card img-1" id="card-1" onmouseover="showFirstCardShadow()">
+                    <p id="firstofparagraphs">Quartos</p>
+                </div>
+                <div class="card img-2" id="card-2" onmouseover="showSecondCardShadow()">
+                    <p id="secondofparagraph">Piscina</p>
+                </div>
+                <div class="card img-3" id="card-3" onmouseover="showThirdCardShadow()">
+                    <p id="thirdofparagraph">Café da manhã</p>
+                </div>
+            </div>
+          </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="rodape">
+          <p>&copy 2022 Copyright - SeatOcean</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
