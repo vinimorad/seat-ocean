@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    --blue: rgb(20, 76, 197);
-}
-
 body, input, textarea, button {
     font-family: sans-serif;
     font-weight: 400;
@@ -34,235 +30,20 @@ header {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 5rem;
-}
-
-.content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-    padding: 0.8rem 0;
-}
-
-.logo {
-    font-size: 2rem;
-    font-weight: 500;
-}
-
-nav ul {
-    display: flex;
-}
-
-nav ul li a {
-    margin-left: 2.5rem;
-    color: #e6e6e6;
-    padding: 0.5rem;
-    transition: 200ms ease-in-out;
-}
-
-nav ul li a:hover {
-    color: white;
-    padding: 0.5rem;
-    background: rgba(31, 29, 29, 0.342);
-    border-radius: 0.4rem;
-}
-
-.mobile-menu {
-    display: none;
-}
-
-#hero {
-    height: 29rem;
-    background-image: url("/assets/cruzeiro.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; 
-    box-shadow: inset 1px 1px 10px rgba(50, 50, 50, 0.77);
-}
-
-.hero-content {
-    margin: 0 auto;
-    position: relative;
-    top: 5rem;
-}
-
-.hero-content h1{
-    width: 25rem;
-    background: #05235a94; 
-    padding: 1rem;
-    color: white;
-    border-radius: 0.4rem;
-    font-size: 1.6rem;
-}
-
-.hero-content h1 span{
-    color: rgb(255, 123, 0);;
-}
-
-.hero-content button {
-    margin-top: 1rem;
-    padding: 0.8rem;
-    background: #05235afa;
-    color: white;
-    font-weight: 500;
-    border: 0;
-    border-radius: 0.4rem;
-    transition: 200ms ease-in-out;
-}
-
-.hero-content button:hover {
-    background: #072b6ee1;
-}
-
-.cards {
-    transform: translateY(-2rem);
-    display: flex;
-    gap: 4rem;
-    cursor: pointer;
-}
-
-.card {
-    width: 18rem;
-    height: 8rem;
-    background: white;
-    border-radius: 0.4rem;
-    flex: 1rem;
-}
-
-.shadow {
-    box-shadow: inset 100px 100px 50px rgba(50, 50, 50, 0.77);
-}
-
-.img-1 p {
-    display: none;
-}
-
-.img-2 p {
-    display: none;
-}
-
-.img-3 p {
-    display: none;
-}
-
-.card p{
-    font-weight: bold;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 3.2rem;
-    color: white;
-}
-
-.img-1 {
-    background-image: url('/assets/suite-cruzeiro-royal-caribbean-1.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-.img-2 {
-    background-image: url('/assets/cruzeiro-piscina.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.img-3 {
-    background-image: url('/assets/cafedamanha.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 0 1.5rem;
 }
 
 footer {
     background-color: rgb(27, 26, 26);
-    
 }
 
 .rodape {
     color: white;
 }
-
+  
 .rodape p {
     text-align: center;
 }
 
-.bar {
-    display: none;
-}
 
-@media (max-width: 709px) {
-    html {
-        font-size: 80.5%;
-    }
-}
-
-@media (max-width: 571px) {
-    html {
-        font-size: 70%;
-    }
-}
-
-@media (max-width: 495px) {
-    .logo {
-        margin: 0 auto;
-    }
-
-    .cards {
-        display: block;
-    }
-    .card {
-        width: 100%;
-        margin: 1rem auto;
-    }
-
-    .card p{
-        margin-top: 0;
-        position: relative;
-        top: 3rem;
-    }
-
-    .content nav {
-        display: none;
-    }
-    
-    .mobile-menu {
-        display: block;
-    }
-
-    .fa-solid {
-        position: absolute;
-        top: 2rem;
-        left: 0.5rem;
-    }
-
-    .bar {
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        z-index: 1;
-        background: rgba(0, 0, 0, 0.603);
-    }
-
-    .bar nav ul{
-        display: block;
-        font-size: 1.5rem;
-        margin-top: 3rem;
-    }
-    .bar nav ul li{
-        margin-top: 1rem;
-    }
-    
-}
-
-@media (max-width: 380px) {
-    .hero-content h1 {
-        width: 100%;
-    }
-}
 
