@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="/Historia/styles.css" />
     <title>SeatOcean - Nossa história</title>
     <script src="/Historia/index.js" defer></script>
-    <script
-      src="https://kit.fontawesome.com/c00ddef8aa.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
     <header>
@@ -21,29 +17,20 @@
           <nav>
             <ul>
               <li><a href="/Historia/index.html">Nossa história</a></li>
-              <li><a href="#">Serviços</a></li>
-              <li><a href="#">Viagens</a></li>
+              <li><a href="/Servicos/index.html">Serviços</a></li>
+              <li><a href="/Viagens/index.html">Viagens</a></li>
             </ul>
           </nav>
         </div>
         <div class="mobile-menu">
-          <i
-            class="fa-solid fa-bars fa-2xl"
-            style="color: white"
-            id="icon-menu"
-            onclick="showMobileMenu()"
-          ></i>
+          <button class="format" style="color: white; background: transparent; border: none; font-size: 1.8rem" id="icon-menu" onclick="showMobileMenu()">☰</button>
           <div class="bar" id="mobilemenu">
             <nav>
-              <i
-                class="fa-solid fa-xmark fa-2xl"
-                style="color: white"
-                onclick="hideMobileMenu()"
-              ></i>
+              <button class="format" style="font-size: 1.8rem; color: white; background: transparent; border: none;" onclick="hideMobileMenu()">X</button>
               <ul>
-                <li><a href="#">Nossa história</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Viagens</a></li>
+                <li><a href="/Historia/index.html">Nossa história</a></li>
+                <li><a href="/Servicos/index.html">Serviços</a></li>
+                <li><a href="/Viagens/index.html">Viagens</a></li>
               </ul>
             </nav>
           </div>
@@ -55,7 +42,7 @@
         <div class="container">
           <div class="box">
             <img src="/assets/embarcacao.webp" alt="Embarcação" />
-            <div class="history">
+            <article class="history">
               <h1>Nossa História</h1>
               <p>
                 Tudo começou com um plano de conectar as pessoas com uma
@@ -70,7 +57,7 @@
                 para uma experiência ainda mais avançada e dedicada, agradecendo
                 a todos os colaboradores que fazem parte desse time conosco.
               </p>
-            </div>
+            </article>
           </div>
         </div>
       </section>
