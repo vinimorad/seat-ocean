@@ -38,19 +38,27 @@ nav ul li a:hover {
   display: none;
 }
 
+main {
+  background-image: url("/assets/naviocruz.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 .services {
-  margin-top: 5rem;
   padding: 1rem;
   width: 100%;
-  background: #09275D;
+  position: relative;
+  top: 5rem;
+  background: #05235a94;
   height: 25rem;
   color: white;
   border-radius: 0.4rem;
 }
 
 .box {
-  height: 50rem;
+  height: 100vh;
 }
 
 .services h1 {
@@ -161,7 +169,7 @@ nav ul li a:hover {
       position: absolute;
       top: 0;
       left: 0;
-      height: 100vh;
+      height: calc(100vh + 6.7vh);
       z-index: 1;
       background: rgba(0, 0, 0, 0.603);
   }

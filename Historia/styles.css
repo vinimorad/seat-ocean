@@ -30,6 +30,13 @@ nav ul li a:hover {
   border-radius: 0.4rem;
 }
 
+main {
+  background-image: url("/assets/cru.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .mobile-menu {
   display: none;
 }
@@ -45,9 +52,10 @@ section {
 
 .box {
   display: flex;
-  margin-top: 5rem;
+  position: relative;
+  top: 5rem;
   width: 100%;
-  background: #09275D;
+  background: #05235a94;
   justify-content: space-between;
   color: white;
   border-radius: 0.4rem;
@@ -137,7 +145,7 @@ section {
       position: absolute;
       top: 0;
       left: 0;
-      height: 100vh;
+      height: calc(100vh + 6.7vh);
       z-index: 1;
       background: rgba(0, 0, 0, 0.603);
   }

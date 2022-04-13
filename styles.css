@@ -44,7 +44,7 @@ nav ul li a:hover {
 }
 
 .hero-content {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     position: relative;
     top: 5rem;
 }
@@ -62,8 +62,9 @@ nav ul li a:hover {
     color: rgb(255, 123, 0);;
 }
 
-.hero-content button {
-    margin-top: 1rem;
+.hero-content a {
+    position: relative;
+    top: 1rem;
     padding: 0.8rem;
     background: #05235afa;
     color: white;
@@ -73,7 +74,7 @@ nav ul li a:hover {
     transition: 200ms ease-in-out;
 }
 
-.hero-content button:hover {
+.hero-content a:hover {
     background: #072b6ee1;
 }
 
@@ -136,6 +137,13 @@ nav ul li a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+.teste {
+    display: flex;
+    /* margin-left: 1rem; */
+    justify-content: space-between;
 }
 
 footer {
@@ -205,7 +213,7 @@ footer {
         position: absolute;
         top: 0;
         left: 0;
-        height: 100vh;
+        height: calc(100vh + 6.7vh);
         z-index: 1;
         background: rgba(0, 0, 0, 0.603);
     }
