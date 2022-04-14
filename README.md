@@ -1,5 +1,5 @@
 ## ✏ Sobre o projeto
-Esse projeto faz parte da segunda etapa do processo seletivo, que o desafio é criar um site responsivo com tags **SEO** e **HTML semântico**, seguindo mais alguns requisitos solicitados.
+Esse projeto faz parte da segunda etapa do processo seletivo, que o desafio é criar um site **responsivo** com tags **SEO** e **HTML semântico**, seguindo mais alguns requisitos solicitados.
 
 ## 🎨 Layout
 ![Animação](https://user-images.githubusercontent.com/61718764/163426878-97baaeda-d9af-4efb-aed8-d0e7ae32e322.gif)
