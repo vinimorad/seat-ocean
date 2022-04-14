@@ -14,19 +14,24 @@
       <div class="container">
         <div class="content">
           <a class="logo" href="/index.html">SeatOcean</a>
-          <nav>
-            <ul>
-              <li><a href="/Historia/index.html">Nossa história</a></li>
-              <li><a href="/Servicos/index.html">Serviços</a></li>
-              <li><a href="/Viagens/index.html">Viagens</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="mobile-menu">
-          <button class="format" style="color: white; background: transparent; border: none; font-size: 1.8rem" id="icon-menu" onclick="showMobileMenu()">☰</button>
+          <button class="format" id="icon-menu" onclick="showMobileMenu()">
+            ☰
+          </button>
           <div class="bar" id="mobilemenu">
-            <nav>
-              <button class="format" style="font-size: 1.8rem; color: white; background: transparent; border: none;" onclick="hideMobileMenu()">X</button>
+            <nav id="nav">
+              <button
+                class="format"
+                style="
+                  font-size: 1.8rem;
+                  color: white;
+                  background: transparent;
+                  border: none;
+                "
+                onclick="hideMobileMenu()"
+                id="closemenu"
+              >
+                X
+              </button>
               <ul>
                 <li><a href="/Historia/index.html">Nossa história</a></li>
                 <li><a href="/Servicos/index.html">Serviços</a></li>
@@ -39,10 +44,10 @@
     </header>
     <main>
       <section id="history">
-        <div class="container">
+        <div class="container-history">
           <div class="box">
             <img src="/assets/embarcacao.webp" alt="Embarcação" />
-            <article class="history">
+            <section class="history">
               <h1>Nossa História</h1>
               <p>
                 Tudo começou com um plano de conectar as pessoas com uma
@@ -57,7 +62,7 @@
                 para uma experiência ainda mais avançada e dedicada, agradecendo
                 a todos os colaboradores que fazem parte desse time conosco.
               </p>
-            </article>
+            </section>
           </div>
         </div>
       </section>

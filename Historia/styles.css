@@ -35,31 +35,41 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  /* height: 100vh; */
+  display: flex;
+
 }
 
-.mobile-menu {
-  display: none;
-}
 
-.bar {
-  display: none;
-}
-
-section {
+#history {
   min-height: 100vh;
 }
 
 
 .box {
   display: flex;
-  position: relative;
-  top: 5rem;
+  /* height: 100%; */
+  /* position: relative;
+  top: 5rem; */
+  /* transform: translateY(5rem); */
+  /* position: absolute; */
   width: 100%;
   background: #05235a94;
   justify-content: space-between;
   color: white;
   border-radius: 0.4rem;
   padding: 1.5rem;
+  
+}
+
+.container-history {
+  display: flex;
+  /* background: red; */
+  padding: 0 1.5rem;
+  width: 100%;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
   
 }
 
@@ -81,6 +91,21 @@ section {
 .box p {
   text-align: justify;
   line-height: 1.5rem;
+}
+
+#icon-menu {
+  display: none !important;
+}
+
+#closemenu {
+  display: none !important;
+}
+
+.format {
+  color: white;
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
 }
 
 @media (max-width: 842px) {
@@ -121,42 +146,79 @@ section {
   }
 }
 
+@media (max-width: 569px) {
+  main, .container-history {
+    height: 110vh;
+  }
+}
+
 @media (max-width: 495px) {
   .logo {
       margin: 0 auto;
   }
 
-  .content nav {
-      display: none;
-  }
-  
-  .mobile-menu {
-      display: block;
-  }
-
   .format {
     position: absolute;
     top: 0.5rem;
-    left: 0.5rem;
+    right: 0.5rem;
 }
 
-  .bar {
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: calc(100vh + 6.7vh);
-      z-index: 1;
-      background: rgba(0, 0, 0, 0.603);
-  }
+#icon-menu {
+    display: block !important;
+}
 
-  .bar nav ul{
-      display: block;
-      font-size: 1.5rem;
-      margin-top: 3rem;
-  }
-  .bar nav ul li{
-      margin-top: 1rem;
-  }
+#closemenu {
+    display: block  !important;
+}
+
+.bar {
+    display: none;
+}
+
+.bar {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: calc(100vh + 6.7vh);
+    background: rgba(0, 0, 0, 0.603);
+    z-index: 1;
+}
+
+.bar nav ul{
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+.bar nav ul li{
+    margin-top: 1rem;
+}
   
 }
+
+@media (max-width: 446px) {
+  main, .container-history {
+    height: 135vh;
+  }
+}
+
+@media (max-width: 411px) {
+
+  main, .container-history {
+    height: 150vh;
+  }
+}
+
+@media (max-width: 292px) {
+  .bar nav ul li a{
+      display: flex;
+  }
+}
+
+@media (max-width: 240px) {
+
+  main, .container-history {
+    height: 250vh;
+  }
+}
+

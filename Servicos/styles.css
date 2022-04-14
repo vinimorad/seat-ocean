@@ -30,19 +30,12 @@ nav ul li a:hover {
   border-radius: 0.4rem;
 }
 
-.mobile-menu {
-  display: none;
-}
-
-.bar {
-  display: none;
-}
-
 main {
   background-image: url("/assets/naviocruz.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 
@@ -92,6 +85,25 @@ main {
    line-height: 1.5rem;
 }
 
+.city p {
+  font-weight: bold;
+}
+
+#icon-menu {
+  display: none !important;
+}
+
+#closemenu {
+  display: none !important;
+}
+
+.format {
+  color: white;
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+}
+
 
 @media (max-width: 842px) {
   html {
@@ -133,7 +145,8 @@ main {
 
 @media (max-width: 530px) {
   .services {
-    height: 47rem;
+    height: auto;
+    position: static;
   }
 
   .cards {
@@ -143,6 +156,10 @@ main {
   .card {
     margin: 5rem auto ;
   }
+
+  .box {
+    height: auto;
+  }
 }
 
 @media (max-width: 495px) {
@@ -150,39 +167,49 @@ main {
       margin: 0 auto;
   }
 
-  .content nav {
-      display: none;
-  }
-  
-  .mobile-menu {
-      display: block;
-  }
-
   .format {
-      position: absolute;
-      top: 0.5rem;
-      left: 0.5rem;
-  }
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
 
-  .bar {
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: calc(100vh + 6.7vh);
-      z-index: 1;
-      background: rgba(0, 0, 0, 0.603);
-  }
+#icon-menu {
+    display: block !important;
+}
 
-  .bar nav ul{
-      display: block;
-      font-size: 1.5rem;
-      margin-top: 3rem;
-  }
-  .bar nav ul li{
-      margin-top: 1rem;
-  }
+#closemenu {
+    display: block  !important;
+}
+
+.bar {
+    display: none;
+}
+
+.bar {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: calc(100vh + 6.7vh);
+    background: rgba(0, 0, 0, 0.603);
+    z-index: 1;
+}
+
+.bar nav ul{
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+.bar nav ul li{
+    margin-top: 1rem;
+}
   
+}
+
+@media (max-width: 292px) {
+  .bar nav ul li a{
+      display: flex;
+  }
 }
 
 @media (max-width: 280px) {
@@ -190,3 +217,11 @@ main {
     width: 100%;
   }
 }
+
+@media (max-width: 280px) {
+  main {
+    height:auto;
+  }
+}
+
+
