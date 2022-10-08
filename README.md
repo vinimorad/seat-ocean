@@ -26,7 +26,7 @@ $ Execute o arquivo index.html com o plugin Live Server
 
 # O servidor irá iniciar automaticamente redirecionando você para a página.
 ```
-
+ 
 ## 📝 Licença
 Este projeto esta sobe a licença [MIT]().
 
