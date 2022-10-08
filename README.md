@@ -19,7 +19,7 @@ Esse projeto faz parte da segunda etapa do processo seletivo, que o desafio é c
 ### 🎲 Rodando o Front End
 ```bash
 # Clone este repositório
-$ git clone https://github.com/vinimovich/SeatOcean.git
+$ git clone https://github.com/vinimovich/seat-ocean.git
 
 # Execute a aplicação
 $ Execute o arquivo index.html com o plugin Live Server
